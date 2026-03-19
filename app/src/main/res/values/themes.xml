@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base application theme - this is what Android Studio generates -->
+    <style name="Base.Theme.Music" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light/dark theme colors here -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="android:statusBarColor">?attr/colorPrimary</item>
+    </style>
+
+    <!-- Your main app theme -->
+    <style name="Theme.Sonora" parent="Base.Theme.Music" />
+
+    <!-- Splash theme -->
+    <style name="Theme.Sonora.Splash" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_background</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+</resources>
