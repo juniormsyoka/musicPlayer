@@ -109,13 +109,11 @@ Successfully implemented 4 core screens for the Android Music Player app using J
 
 **UI Components:**
 - NowPlayingContent with scrollable player
-- VolumeControl with stereo icons
 - QueuePanel with LazyColumn of songs
 - Gesture detection for swipe controls
 
 **State Integration:**
 - `playbackState` for current song and queue
-- `volumePercent` for volume display
 - `formatTime` for time formatting
 - All playback callbacks (play/pause, skip, seek, etc.)
 - RepeatMode cycling

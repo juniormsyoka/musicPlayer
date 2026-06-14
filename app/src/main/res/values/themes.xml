@@ -2,19 +2,20 @@
 <resources>
 
     <!-- Base application theme - this is what Android Studio generates -->
-    <style name="Base.Theme.Music" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.Music" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your light/dark theme colors here -->
-        <item name="colorPrimary">@color/purple_500</item>
-        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorPrimary">#1D1815</item>
+        <item name="colorSecondary">#FF5722</item>
         <item name="android:statusBarColor">?attr/colorPrimary</item>
     </style>
 
     <!-- Your main app theme -->
     <style name="Theme.Sonora" parent="Base.Theme.Music" />
 
-    <!-- Splash theme -->
-    <style name="Theme.Sonora.Splash" parent="Theme.Material3.DayNight.NoActionBar">
-        <item name="android:windowBackground">@drawable/splash_background</item>
+    <!-- Splash theme - USING YOUR NEW PNG IMAGE -->
+    <style name="Theme.Sonora.Splash" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- CHANGED: Use splash_image.png instead of splash_background.xml -->
+        <item name="android:windowBackground">@drawable/splash_image</item>
         <item name="android:windowFullscreen">true</item>
         <item name="android:windowContentOverlay">@null</item>
         <item name="android:statusBarColor">@android:color/transparent</item>

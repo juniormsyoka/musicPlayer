@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
@@ -14,9 +15,9 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
-        android:label="Sonora"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:icon="@drawable/splash_background"
+        android:label="VybzVault"
+        android:roundIcon="@drawable/splash_background"
         android:supportsRtl="true"
         android:theme="@style/Theme.Sonora">  <!-- Default theme -->
 

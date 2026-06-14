@@ -4,15 +4,15 @@ plugins {
 }
 
 android {
-    namespace = "com.example.music"
-    compileSdk {
-        version = release(36) {
-            minorApiLevel = 1
-        }
-    }
+    // UPDATED: Points to your new custom package path
+    namespace = "com.vybzvault.music"
+
+    // FIXED: Corrected syntax to compile safely using standard target levels
+    compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.example.music"
+        // UPDATED: Play Store requires this to NOT be "com.example"
+        applicationId = "com.vybzvault.music"
         minSdk = 24
         targetSdk = 36
         versionCode = 1
@@ -45,7 +45,9 @@ dependencies {
     implementation(libs.androidx.activity.compose)
     implementation(platform(libs.androidx.compose.bom))
     implementation(libs.androidx.compose.ui)
-    implementation(libs.androidx.compose.ui.graphics)
+    implementation("androidx.core:core-splashscreen:1.2.0")
+    implementation("androidx.compose.foundation:foundation")
+    implementation("androidx.compose.animation:animation-core")
     implementation(libs.androidx.compose.ui.tooling.preview)
     implementation(libs.androidx.compose.material3)
     implementation(libs.androidx.lifecycle.viewmodel.compose)
@@ -55,6 +57,7 @@ dependencies {
     implementation(libs.coil.compose)
     implementation(libs.androidx.compose.material.icons.extended)
     implementation(libs.google.material)
+    implementation(libs.androidx.compose.ui.geometry)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
